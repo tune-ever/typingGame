@@ -1,9 +1,14 @@
 * {
     box-sizing: border-box;
+    font-family: 'Happy Monkey', cursive;
 }
 
+h1 {
+    text-align: center;
+}
 body {
-    background-color: gray;
+    background-color: #B1CF5F;
+    padding: 50px;
 }
 
 div {
@@ -15,7 +20,7 @@ div {
 }
 
 .correct {
-    color: lightgreen;
+    color: yellow;
 }
 
 #line {
