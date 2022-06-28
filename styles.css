@@ -25,14 +25,7 @@ div {
 }
 
 #current {
-    animation: lineAnimation;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes lineAnimation {
-    0% {border-left: 5px solid white;}
-    100% {border-left: none;}
+    border-left: 4px solid white;
 }
 
 
