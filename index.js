@@ -24,7 +24,11 @@ document.addEventListener("keydown", function(event) {
     if(event.key.length == 1){
         //start timer at first press:
         if(index == 0){
-            timer(1);
+            let sec = 0
+            let timer = setInterval(function () {
+             document.getElementById('timer').innerHTML = "Seconds: " + sec
+            sec++
+            }, 1000)
         }
         // do something only if we have not reached the end of text:
         if(index < textContent.length){
@@ -49,13 +53,16 @@ document.addEventListener("keydown", function(event) {
             // remove id from the last element
             chars[index-1].id = ''
         }
+        else{
+            //stop timer
+            clearInterval(timer)
+        }
     }
 })
 
-function timer() {
-    let sec = 0
-    let timer = setInterval(function () {
-        document.getElementById('timer').innerHTML = "Seconds: " + sec
-    sec++
-        }, 1000)
+function timer(num) {
+    
+    if(num == 0){
+        clearInterval(1)
+    }
 }
