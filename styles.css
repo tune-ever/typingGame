@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Happy Monkey', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+body {
+    background-color: #B1CF5F;
+    padding: 50px;
+}
+
+
+div {
+    font-size: 30px;
+}
+
+.incorrect {
+    color: red;
+}
+
+.correct {
+    color: yellow;
+}
+
+#current {
+    border-left: 4px solid white;
+}
+
+
+.timer {
+    border: 5px solid white;
+}
