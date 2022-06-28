@@ -22,14 +22,6 @@ chars[0].id = 'current'
 document.addEventListener("keydown", function(event) {
     // if key pressed was a single letter, we do something:
     if(event.key.length == 1){
-        //start timer at first press:
-        if(index == 0){
-            let sec = 0
-            let timer = setInterval(function () {
-             document.getElementById('timer').innerHTML = "Seconds: " + sec
-            sec++
-            }, 1000)
-        }
         // do something only if we have not reached the end of text:
         if(index < textContent.length){
             currentChar = textContent.charAt(index)
@@ -53,16 +45,5 @@ document.addEventListener("keydown", function(event) {
             // remove id from the last element
             chars[index-1].id = ''
         }
-        else{
-            //stop timer
-            clearInterval(timer)
-        }
     }
 })
-
-function timer(num) {
-    
-    if(num == 0){
-        clearInterval(1)
-    }
-}
