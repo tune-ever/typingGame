@@ -13,7 +13,7 @@ textContent.split('').forEach(character => {
     charSpan.innerText = character
     theText.appendChild(charSpan)
 })
-
+console.log("test")
 //initialize line:
 const chars = document.querySelectorAll('span')
 chars[0].id = 'current'
